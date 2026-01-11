@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Time Hub</title>
+    <title>Digital Time Hub | Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="controls">
-        <button class="tab-btn active" data-target="clock-section">Clock</button>
-        <button class="tab-btn" data-target="timer-section">Timer</button>
-        <button class="tab-btn" data-target="counter-section">Counter</button>
+    <nav class="tabs">
+        <button class="tab-btn active" data-target="clock-mode">Clock</button>
+        <button class="tab-btn" data-target="timer-mode">Timer</button>
+        <button class="tab-btn" data-target="counter-mode">Counter</button>
     </nav>
 
     <main class="container">
-        <section id="clock-section" class="mode-section active">
+        <section id="clock-mode" class="mode active">
             <h2>Digital Clock</h2>
-            <div class="display">
+            <div class="display-card">
                 <div class="unit"><span id="hour">00</span><span class="label">Hours</span></div>
                 <div class="unit"><span id="minutes">00</span><span class="label">Minutes</span></div>
                 <div class="unit"><span id="seconds">00</span><span class="label">Seconds</span></div>
-                <div class="unit"><span id="ampm" class="ampm-box">AM</span></div>
+                <div class="unit"><span id="ampm" class="ampm-tag">AM</span></div>
             </div>
         </section>
 
-        <section id="timer-section" class="mode-section">
+        <section id="timer-mode" class="mode">
             <h2>Countdown Timer</h2>
-            <div class="display">
-                <span id="timer-display">00:00</span>
+            <div class="display-card">
+                <span id="timer-time">00:00:00</span>
             </div>
-            <div class="btn-group">
-                <input type="number" id="timer-input" placeholder="Mins" min="1">
+            <div class="controls">
+                <div class="input-row">
+                    <input type="number" id="hr-input" placeholder="Hr" min="0" max="99">
+                    <input type="number" id="min-input" placeholder="Min" min="0" max="59">
+                </div>
                 <button id="start-timer">Start</button>
-                <button id="reset-timer">Reset</button>
+                <button id="stop-timer">Pause</button>
+                <button id="off-timer" class="danger-btn" style="display:none;">OFF</button>
             </div>
+            <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
         </section>
 
-        <section id="counter-section" class="mode-section">
+        <section id="counter-mode" class="mode">
             <h2>Tally Counter</h2>
-            <div class="display">
+            <div class="display-card">
                 <span id="count-value">0</span>
             </div>
-            <div class="btn-group">
+            <div class="controls">
                 <button id="decrement">-</button>
                 <button id="reset-counter">Reset</button>
                 <button id="increment">+</button>

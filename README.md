@@ -1,80 +1,49 @@
-<<<<<<< HEAD
-# ⏰ Digital Clock
-[![🚀 View Live Demo](https://img.shields.io/badge/View%20Live%20Demo-28A745?style=for-the-badge)](https://mohammedalhaj14.github.io/Digital-Clock/)
-
-A simple, stylish **Digital Clock** built using **HTML, CSS, and JavaScript**. This project displays the current time dynamically and updates every second.
-
-## 🔥 Features
-- 🕒 Real-time digital clock display
-- 🎨 Customizable styling with CSS
-- ⚡ Lightweight and fast performance
-- 🌍 Supports different time zones (optional enhancement)
-
-## 📂 Project Structure
-```
-Digital-Clock/
-│── index.html   # Main HTML structure
-│── style.css    # Styling file
-└── script.js    # JavaScript logic
-```
-=======
-# 🕒 Ultimate Time Hub
+# 🕒 Ultimate Time Hub | Pro Edition
 
 [![🚀 View Live Demo](https://img.shields.io/badge/View%20Live%20Demo-28A745?style=for-the-badge)](https://mohammedalhaj14.github.io/Digital-Clock/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-A professional, multi-functional web application featuring a **Digital Clock**, **Countdown Timer**, and **Tally Counter**. This project showcases modern "Glassmorphism" UI design and responsive web development techniques.
-
-
+A professional, multi-functional time management dashboard featuring a **12-Hour Clock**, **High-Precision Timer**, and **Tally Counter**. Designed with a modern "Glassmorphic" UI and fully responsive for all devices.
 
 ## 🔗 Live Demo
-Check out the project in action here:  
+Check out the interactive project here:  
 👉 **[https://mohammedalhaj14.github.io/Digital-Clock/](https://mohammedalhaj14.github.io/Digital-Clock/)**
 
 ---
 
-## 🔥 Features
+## ✨ Pro Features
 
-### 🕒 Digital Clock
-* **Real-time Updates:** Precise time tracking with 12-hour AM/PM format.
-* **Modern UI:** Sleek glassmorphic cards with smooth shadows.
+### 🕒 12-Hour Digital Clock
+* **Real-time Sync:** Updates every second with a smooth, zero-padded interface.
+* **AM/PM Logic:** Automatically toggles based on the current time of day.
 
-### ⏳ Countdown Timer
-* **Custom Duration:** Set minutes and track time remaining.
-* **Alert System:** Notifies the user when the countdown reaches zero.
+### ⏳ Countdown Timer (Advanced)
+* **Hours & Minutes Support:** Set long-duration tasks (up to 99 hours).
+* **Pause/Resume:** Stop the timer and resume exactly where you left off.
+* **Persistent Looping Alarm:** Once the timer hits zero, a looping alarm sounds until you manually click **OFF**.
+* **Visual Alerts:** A pulsing red "OFF" button appears only when the alarm is active.
 
 ### 🔢 Tally Counter
-* **Interactive Controls:** Easy-to-use increment, decrement, and reset buttons.
-* **State Persistence:** Clean logic for managing numerical tallies.
+* **One-Touch Control:** Increment, decrement, or reset values with a single click.
+* **Responsive Layout:** Works perfectly for tracking reps, inventory, or events on the go.
 
-### 📱 Fully Responsive
-* Optimized for **Mobile, Tablet, and Desktop** using CSS `flexbox` and `clamp()` typography.
+### 📱 Fully Responsive UI
+* Built using CSS `clamp()` and Flexbox for a seamless experience on mobile, tablet, and desktop.
 
 ---
 
 ## 📂 Project Structure
 ```text
 Digital-Clock/
-│── index.html    # Semantic HTML5 & Tabbed Navigation
-│── style.css     # Glassmorphism, Animations & Responsive Design
-└── index.js      # Core Logic for Clock, Timer, and Counter
+│── index.html    # Semantic structure & Audio assets
+│── style.css     # Glassmorphism, Animations & Media Queries
+└── script.js     # Unified logic for Clock, Timer, and Counter
 
 ```
 
->>>>>>> cd38d01 (Updated Version)
 ---
 
-## 🛠️ Setup and Usage
-
-<<<<<<< HEAD
-To run this project locally, simply clone the repository and open the `index.html` file in your web browser.
-
-```bash
-git clone [https://github.com/mohammedalhaj14/Digital-Clock.git](https://github.com/mohammedalhaj14/Digital-Clock.git)
-cd Digital-Clock
-# Open index.html in your browser
-=======
-To run this project locally:
+## 🚀 Installation & Local Usage
 
 1. **Clone the repository:**
 ```bash
@@ -91,14 +60,14 @@ cd Digital-Clock
 
 
 3. **Open the project:**
-Open `index.html` in your favorite web browser.
+Open `index.html` in your browser.
 
 ---
 
-## 🤝 Contributing
+## 🛠️ Built With
 
-Contributions are welcome! If you'd like to improve the UI or add a new feature (like a Stopwatch or Alarm), feel free to fork the repo and submit a Pull Request.
+* **HTML5:** Semantic markup and Audio API.
+* **CSS3:** Glassmorphism, CSS Variables, and Pulse Animations.
+* **Vanilla JavaScript:** ES6+ logic for time math and state management.
 
 **Developed with ❤️ by [Mohammed Alhaj**](https://www.google.com/search?q=https://github.com/mohammedalhaj14)
-
->>>>>>> cd38d01 (Updated Version)

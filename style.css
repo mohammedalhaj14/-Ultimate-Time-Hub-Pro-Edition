@@ -1,7 +1,8 @@
 :root {
+    --primary: #6366f1;
+    --danger: #ef4444;
+    --success: #10b981;
     --glass: rgba(255, 255, 255, 0.1);
-    --blur: blur(10px);
-    --border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -12,107 +13,65 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url("https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
     color: white;
-    overflow-x: hidden;
 }
 
-/* Tab Navigation */
-.controls {
-    margin-bottom: 2rem;
-    display: flex;
-    gap: 10px;
-}
-
+.tabs { margin-bottom: 20px; }
 .tab-btn {
-    padding: 10px 20px;
-    border: var(--border);
+    padding: 12px 20px;
     background: var(--glass);
+    border: 1px solid rgba(255,255,255,0.2);
     color: white;
     cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+    border-radius: 8px;
+    margin: 0 5px;
 }
+.tab-btn.active { background: var(--primary); box-shadow: 0 0 15px var(--primary); }
 
-.tab-btn.active {
-    background: #6366f1;
-    box-shadow: 0 0 15px #6366f1;
-}
+.mode { display: none; flex-direction: column; align-items: center; }
+.mode.active { display: flex; animation: slideUp 0.4s ease; }
 
-/* Sections Logic */
-.mode-section {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    animation: fadeIn 0.5s ease;
-}
-
-.mode-section.active { display: flex; }
-
-/* The Glass Card */
-.display {
-    display: flex;
+.display-card {
     background: var(--glass);
-    backdrop-filter: var(--blur);
-    padding: 2rem;
-    border-radius: 20px;
-    border: var(--border);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
     gap: 15px;
-}
-
-.unit {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: clamp(80px, 15vw, 120px);
 }
 
-.unit span:first-child, #timer-display, #count-value {
-    font-size: clamp(2rem, 8vw, 4rem);
-    font-weight: bold;
+.unit { display: flex; flex-direction: column; align-items: center; width: 80px; }
+.unit span:first-child, #timer-time, #count-value {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: 800;
 }
 
-.label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 5px;
-    color: #cbd5e1;
+.label { font-size: 10px; text-transform: uppercase; color: #cbd5e1; }
+.ampm-tag { background: var(--success); padding: 5px 10px; border-radius: 5px; font-size: 1rem !important; }
+
+.controls { margin-top: 20px; display: flex; gap: 10px; align-items: center; }
+.input-row { display: flex; gap: 5px; }
+input { width: 50px; padding: 10px; border-radius: 5px; border: none; text-align: center; }
+
+button:not(.tab-btn) { 
+    padding: 10px 20px; border: none; border-radius: 5px; 
+    background: var(--primary); color: white; cursor: pointer; font-weight: bold;
 }
 
-.ampm-box {
-    background: #10b981;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1.5rem !important;
+.danger-btn { 
+    background: var(--danger) !important; 
+    animation: pulse 1s infinite;
 }
 
-/* Buttons and Inputs */
-.btn-group { margin-top: 20px; display: flex; gap: 10px; }
-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 60px;
-    text-align: center;
-}
-button:not(.tab-btn) {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: #6366f1;
-    color: white;
-    cursor: pointer;
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px var(--danger); }
+    100% { transform: scale(1); }
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 480px) {
-    .display { padding: 1rem; gap: 5px; }
-    .unit { width: 70px; }
-}
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
