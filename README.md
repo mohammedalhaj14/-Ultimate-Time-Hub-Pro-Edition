@@ -1,13 +1,13 @@
 # 🕒 Ultimate Time Hub | Pro Edition
 
-[![🚀 View Live Demo](https://img.shields.io/badge/View%20Live%20Demo-28A745?style=for-the-badge)](https://mohammedalhaj14.github.io/Digital-Clock/)
+[![🚀 View Live Demo](https://img.shields.io/badge/View%20Live%20Demo-28A745?style=for-the-badge)](https://mohammedalhaj14.github.io/-Ultimate-Time-Hub-Pro-Edition/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 A professional, multi-functional time management dashboard featuring a **12-Hour Clock**, **High-Precision Timer**, and **Tally Counter**. Designed with a modern "Glassmorphic" UI and fully responsive for all devices.
 
 ## 🔗 Live Demo
 Check out the interactive project here:  
-👉 **[https://mohammedalhaj14.github.io/Digital-Clock/](https://mohammedalhaj14.github.io/Digital-Clock/)**
+👉 **[https://mohammedalhaj14.github.io/-Ultimate-Time-Hub-Pro-Edition/](https://mohammedalhaj14.github.io/-Ultimate-Time-Hub-Pro-Edition/)**
 
 ---
 
@@ -47,14 +47,14 @@ Digital-Clock/
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/mohammedalhaj14/Digital-Clock.git](https://github.com/mohammedalhaj14/Digital-Clock.git)
+git clone [https://github.com/mohammedalhaj14/-Ultimate-Time-Hub-Pro-Edition.git](https://github.com/mohammedalhaj14/-Ultimate-Time-Hub-Pro-Edition.git)
 
 ```
 
 
 2. **Navigate to the folder:**
 ```bash
-cd Digital-Clock
+cd -Ultimate-Time-Hub-Pro-Edition
 
 ```
 
@@ -71,3 +71,4 @@ Open `index.html` in your browser.
 * **Vanilla JavaScript:** ES6+ logic for time math and state management.
 
 **Developed with ❤️ by [Mohammed Alhaj**](https://www.google.com/search?q=https://github.com/mohammedalhaj14)
+
