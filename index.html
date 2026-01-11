@@ -2,31 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock </title>
+    <title>Ultimate Time Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Digital Clock</h2>
-    <div class="clock">
-        <div>
-            <span id="hour">00</span>
-            <span class="text">Hours</span>
-        </div>
-        <div>
-            <span id="minutees">00</span>
-            <span class="text">Minutees</span>
-        </div>
-        <div>
-            <span id="seconds">00</span>
-            <span class="text">Seconds</span>
-        </div>
-        <div>
-            <span id="ampm">AM</span>
-        </div>
-        
-    </div>
-    <script src="index.js"></script>
+
+    <nav class="controls">
+        <button class="tab-btn active" data-target="clock-section">Clock</button>
+        <button class="tab-btn" data-target="timer-section">Timer</button>
+        <button class="tab-btn" data-target="counter-section">Counter</button>
+    </nav>
+
+    <main class="container">
+        <section id="clock-section" class="mode-section active">
+            <h2>Digital Clock</h2>
+            <div class="display">
+                <div class="unit"><span id="hour">00</span><span class="label">Hours</span></div>
+                <div class="unit"><span id="minutes">00</span><span class="label">Minutes</span></div>
+                <div class="unit"><span id="seconds">00</span><span class="label">Seconds</span></div>
+                <div class="unit"><span id="ampm" class="ampm-box">AM</span></div>
+            </div>
+        </section>
+
+        <section id="timer-section" class="mode-section">
+            <h2>Countdown Timer</h2>
+            <div class="display">
+                <span id="timer-display">00:00</span>
+            </div>
+            <div class="btn-group">
+                <input type="number" id="timer-input" placeholder="Mins" min="1">
+                <button id="start-timer">Start</button>
+                <button id="reset-timer">Reset</button>
+            </div>
+        </section>
+
+        <section id="counter-section" class="mode-section">
+            <h2>Tally Counter</h2>
+            <div class="display">
+                <span id="count-value">0</span>
+            </div>
+            <div class="btn-group">
+                <button id="decrement">-</button>
+                <button id="reset-counter">Reset</button>
+                <button id="increment">+</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
